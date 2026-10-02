@@ -42,26 +42,26 @@ public class TestEmployee {
             System.exit(1);
         }
 
-        // Test 1 — Example 1 (Rating 4 = 15% bonus)
+        // Test 1 — Example 1 (Rating 4 = 20% bonus)
         runTest(
                 "test_01_rating_four",
                 "Rahul",
                 101,
                 50000.0,
                 4,
-                7500.0,
-                57500.0
+                10000.0,
+                60000.0
         );
 
-        // Test 2 — Example 2 (Salary 40000, Rating 5 = 20% bonus -> 8000 bonus, 48000 total)
+        // Test 2 — Example 2 (Rating 5 = 25% bonus)
         runTest(
                 "test_02_rating_five",
                 "Priya",
                 102,
                 40000.0,
                 5,
-                8000.0,
-                48000.0
+                10000.0,
+                50000.0
         );
 
         // Test 3 — Example 3
@@ -109,14 +109,15 @@ public class TestEmployee {
         );
 
         // Test 7 — Decimal salary
+
         runTest(
                 "test_07_decimal_salary",
                 "Sneha",
                 107,
                 45555.50,
                 4,
-                6833.325,
-                52388.825
+                9111.10,
+                54666.60
         );
 
         // Test 8 — Invalid high rating
@@ -484,7 +485,7 @@ public class TestEmployee {
 
             boolean secondCorrect =
                     Math.abs(
-                            secondSalary - 96000.0
+                            secondSalary - 100000.0
                     ) < 0.001;
 
             if (firstCorrect && secondCorrect) {
@@ -503,7 +504,7 @@ public class TestEmployee {
 
                 System.out.println(
                         "           Expected salaries: "
-                                + "84000.0 → 96000.0"
+                                + "84000.0 → 100000.0"
                 );
 
                 System.out.println(
