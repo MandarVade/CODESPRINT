@@ -116,7 +116,6 @@ public class TestMostFrequentProduct {
 
         System.out.println("---------------------------------------------------------");
         System.out.println("  Score: " + passed + "/10");
-        System.out.println("  Marks: " + (passed * 10) + "/100");
         System.out.println("=========================================================");
 
         System.exit(failed > 0 ? 1 : 0);
